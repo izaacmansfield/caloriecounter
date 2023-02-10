@@ -6,7 +6,7 @@ body {
     height: 100vh;
   }
   
-  .login-container {
+  .create-account-container {
     width: 400px;
     padding: 2em;
     background-color: white;
@@ -38,6 +38,7 @@ body {
   }
   
   input[type="text"],
+  input[type="email"],
   input[type="password"] {
     padding: 0.5em;
     font-size: 1em;
@@ -59,5 +60,4 @@ body {
   button[type="submit"]:hover {
     background-color: darkblue;
   }
-
   
