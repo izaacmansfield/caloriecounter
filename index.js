@@ -62,7 +62,7 @@ con.connect(function(err) {
   if (validateLogin(username, password)) {
     // Login successful
     console.log("Login successful!");
-    window.location.href = "./index.html";
+    window.location.href = "./home.html";
   } else {
     // Login failed
     console.log("Login failed. Please try again.");
