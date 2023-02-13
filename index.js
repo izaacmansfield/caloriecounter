@@ -15,7 +15,7 @@ con.connect(function(err) {
   console.log("Connected to database!");
 
   // Fetch the login credentials from the database
-  var sql = "SELECT username, password FROM users";
+  var sql = "SELECT Username, Password FROM Users_credentials";
   con.query(sql, function(err, result) {
     if (err) throw err;
 
