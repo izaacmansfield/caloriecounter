@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Munch</title>
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+  </head>
+  <body>
+    <header>
+      <h1>Munch!</h1>
+        <h3>Track Your Daily Calorie Intake</h3>
+      <!--<nav>
+        <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#add-meal">Add Meal</a></li>
+          <li><a href="#view-meals">View Meals</a></li>
+        </ul>
+      </nav>-->
+    </header>
+    <main>
+        <section id="dashboard">
+            <img src="food2.jpg" id="food1" alt="foods" />
+
+            <h2>Dashboard</h2>
+            <div class="progress-container">
+                <!--            <p>Calories Consumed: <span id="calories-consumed"></span> / <span id="calorie-goal">2000</span></p>
+        -->
+                <label for="input">Enter Calories Consumed:</label>
+                <input type="number" id="input" , oninput="updateProgressBar()" , min="0" , max="2000" , value="0">
+
+
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
+                <!--  <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>-->
+            </div>
+        </section>
+      <section id="add-meal">
+        <h2>Add a Meal</h2>
+        <form>
+          <div class="form-group">
+            <label for="meal-name">Meal Name:</label>
+            <input type="text" id="meal-name" name="meal-name">
+          </div>
+          <div class="form-group">
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" name="calories">
+          </div>
+          <button type="submit">Add</button>
+        </form>
+      </section>
+      <section id="view-meals">
+          <h2>View Meals</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Meal Name:</th>
+                      <th>Calories:</th>
+                  </tr>
+              </thead>
+              <tbody id="meal-list">
+                  <!-- Meal entries will be added here -->
+              </tbody>
+
+          </table>
+          <img src="food1.jfif" alt="foodpic", id="food2" />
+
+      </section>
+    </main>
+      <script src="homejs.js"></script>
+  </body>
+</html>

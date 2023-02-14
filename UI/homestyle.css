@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5DC;
+}
+
+header {
+/*  display: flex;*/
+  justify-content:center;
+      align-items: center;
+      text-align:center;
+/*     padding: 1em;
+*/}
+
+section {
+  padding-top: 100px;
+}
+
+h1 {
+/*    margin: 0;
+*/    color: #006400;
+}
+
+
+nav ul {
+  list-style: none;
+/*    display: flex;
+*/    margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+main {
+  padding: 1em;
+}
+
+th {
+  padding-left: 50px;
+}
+
+#food1 {
+    display:block;
+    float:right;
+    max-height: 600px;
+    max-width: 600px;
+    padding-right: 50px;
+}
+
+#food2 {
+  display: block;
+  max-height: 800px;
+  max-width: 800px;
+  margin: 100px;
+}
+
+.progress-bar {
+  width: 50%;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+input {
+  margin-bottom: 20px;
+}
